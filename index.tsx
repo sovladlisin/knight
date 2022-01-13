@@ -8,6 +8,7 @@ import './src/css/all.css'
 import './src/css/fixer.css'
 import './src/css/alerts.css'
 import './src/css/main.css'
+import './src/css/loader.css'
 
 
 import { persistStore } from 'redux-persist'

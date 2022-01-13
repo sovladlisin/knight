@@ -1167,3 +1167,38 @@ z-index: 1;
 .faq-item-line {
   cursor: pointer;
 }
+
+.loading {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background: white;
+  z-index: 111;
+}
+
+.loading-inner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: max-content;
+}
+.image-outer.loading-logo {
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+  width: 228px;
+}
+.loading-header {
+  font-size: 30px;
+  line-height: 82px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #223042;
+  margin-top: -5px;
+}
+
+.loader-animation {
+  width: max-content;
+  margin: 10px auto;
+}

@@ -11,6 +11,7 @@ import Key from './HomeComponents/6_Key';
 import Money_Boss from './HomeComponents/7_Money_Boss';
 import Get from './HomeComponents/8_Get';
 import Price from './HomeComponents/9_Price';
+import LOGO from '../../images/1_Title/logo 1.png'
 
 interface IHomeProps {
 }
@@ -20,7 +21,29 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
     const scrollRef1 = React.useRef(null)
     const scroll1 = () => scrollRef1.current.scrollIntoView({ behavior: 'smooth' })
 
+    const [loading, SetLoading] = React.useState(true)
+
+    React.useEffect(() => {
+        setTimeout(() => {
+            SetLoading(false)
+        }, 1500);
+
+    })
     return <>
+        {loading && <div className='loading'>
+            <div className='loading-inner'>
+                <span className='image-outer loading-logo'>
+                    <img src={LOGO}></img>
+                </span>
+                <div className='loader-animation'>
+                    <div className="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                </div>
+                <h1 className='loading-header'>Закрытый клуб богатых таргетологов</h1>
+            </div>
+
+
+
+        </div>}
         <span ref={scrollRef1}></span>
         <Title />
         <Chest />
