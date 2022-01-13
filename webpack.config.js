@@ -4,7 +4,7 @@ module.exports = {
     entry: "./index.tsx",
     output: {
         filename: "index.js",
-        path: path.resolve(__dirname, './build'), // change this,
+        path: path.resolve(__dirname, ''), // change this,
         publicPath: './',
     },
     module: {
@@ -40,11 +40,11 @@ module.exports = {
     resolve: {
         extensions: [".ts", ".tsx", ".js"]
     },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: './index.html'
-        })
-    ],
+    // plugins: [
+    //     new HtmlWebpackPlugin({
+    //         template: './index.html'
+    //     })
+    // ],
 
     // externals: {
     //     moment: 'moment'
