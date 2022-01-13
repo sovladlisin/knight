@@ -449,6 +449,7 @@ height: inherit;
   gap: 0 50px;
   width: max-content;
   margin: 0 auto;
+  margin-top: 45px;
 }
 .image-outer.live-streams-person-icon {
   width: 200px;
