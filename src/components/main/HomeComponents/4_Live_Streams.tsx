@@ -100,17 +100,17 @@ const Live_Streams: React.FunctionComponent<ILive_StreamsProps> = (props) => {
                             милов</p>
                     </div>
                     <div className='live-streams-person-icon-container'>
-                        <span className='image-outer live-streams-person-icon'><img src={P4}></img></span>
+                        <span className='image-outer live-streams-person-icon'><img src={P6}></img></span>
                         <p className='live-streams-person-name'>Дмитрий
                             гладких</p>
                     </div>
                     <div className='live-streams-person-icon-container'>
-                        <span className='image-outer live-streams-person-icon'><img src={P5}></img></span>
+                        <span className='image-outer live-streams-person-icon'><img src={P4}></img></span>
                         <p className='live-streams-person-name'>мария
                             самылина</p>
                     </div>
                     <div className='live-streams-person-icon-container'>
-                        <span className='image-outer live-streams-person-icon'><img src={P6}></img></span>
+                        <span className='image-outer live-streams-person-icon'><img src={P5}></img></span>
                         <p className='live-streams-person-name'>алла
                             булеева</p>
                     </div>
