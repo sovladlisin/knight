@@ -1,0 +1,156 @@
+
+.sub-info-container {
+  width: 1200px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.sub-info-free {
+  border: 1px solid #B3B7C1;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 30px;
+}
+.sub-info-pay {
+  background: linear-gradient(45deg, #386BEE 0%, #1655F4 50%);
+  border: 1px solid #DDDDDD;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 30px;
+  color: white;
+}
+.sub-info-price-log-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  border-bottom: 1px solid gainsboro;
+  padding-bottom: 30px;
+}
+.sub-info-price-amount-container > p {
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 60px;
+  color: #16181B;
+  float: left;
+  height: 60px;
+}
+.sub-info-price-amount-container {
+  display: inline-block;
+}
+.sub-info-price-amount-container > span {
+  float: left;
+  height: 60px;
+  line-height: 80px;
+  color: #b3b7c1;
+  font-size: 13px;
+}
+sub-info-price-container > button {
+  border: 2px solid #386BEE;
+  box-sizing: border-box;
+  border-radius: 75px;
+}
+.sub-info-price-log-container > button {
+  border: 2px solid #386BEE;
+  box-sizing: border-box;
+  border-radius: 75px;
+  height: 54px;
+  color: #386BEE;
+  width: 180px;
+}
+.sub-info-price-container > p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #16181B;
+}
+.sub-info-line {
+  display: grid;
+  grid-template-columns: 30px auto;
+  margin: 15px auto;
+}
+.sub-info-line p {
+  color: gainsboro;
+  line-height: 20px;
+}
+
+.sub-info-line-includes > p {
+  color: #2D4379 !important;
+}
+
+.sub-info-line-includes > span {
+  color: #386BEE !important;
+}
+.sub-info-line > span {
+  color: gainsboro;
+  line-height: 22px;
+}
+.sub-info-pay .sub-info-price-amount-container > p {
+  color: white;
+}
+.sub-info-pay p {
+  color: white !important;
+}
+.sub-info-pay span {
+  color: white !important;
+}
+.sub-info-pay button {
+  color: white !important;
+  border-color: white !important;
+}
+
+.sub-info-points-container.mobile {
+  font-size: 10pt;
+}
+.sub-info-container.mobile {
+  display: block;
+  width: 100%;
+  max-width: 390px;
+  margin: 10px auto;
+}
+.sub-info-pay.mobile {
+  width: 100%;
+  max-width: 390px;
+  display: inline-block;
+}
+.sub-dots-buttons.mobile > button {
+  background: #386BEE;
+  box-shadow: 0px 8px 16px rgba(56, 107, 238, 0.25);
+  height: 40px !important;
+  width: 40px !important;
+  color: white;
+  border-radius: 55px;
+  font-size: 13px;
+}
+.sub-dots-buttons.mobile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 15px;
+  width: max-content;
+  margin: 15px auto;
+}
+.sub-info-price-amount-container.mobile > p {
+  font-size: 22pt;
+  height: 40px;
+  line-height: 40px;
+}
+.sub-info-container.mobile button {
+  width: 100px;
+  height: 40px;
+  font-size: 10pt;
+}
+.sub-info-price-amount-container.mobile > span {
+  height: 40px;
+  line-height: 50px;
+}
+.sub-info-price-container.mobile > p {
+  font-size: 12pt;
+}
+.sub-info-price-log-container.mobile {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.sub-info-points-container.mobile > div {
+  margin: 15px 0;
+  pointer-events: none;
+}
