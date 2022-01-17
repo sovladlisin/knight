@@ -33,21 +33,21 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
 
     })
 
-
+    function isInViewport(element) {
+        var position = element.getBoundingClientRect();
+        // checking for partial visibility
+        if (position.top < window.innerHeight && position.bottom >= 0)
+            return true
+        return false
+    }
 
 
     useOnWindowScroll(() => {
         const els = document.getElementsByClassName('parallax')
         Array.prototype.filter.call(els, function (el) {
-            if (!checkvisible(el)) {
-                var firstTop = getOffset(el).top
-                var winScrollTop = window.scrollY
-                console.log(winScrollTop)
-                var shiftDistance = (firstTop - winScrollTop) * 0.2;
-                el.style.transform = "translateY(" + shiftDistance + "px)"
-            }
+            if (isInViewport(el))
+                el.style.transform = "translateY(" + (getOffset(el).top - window.scrollY) * 0.2 + "px)"
         });
-
     }
     );
 
