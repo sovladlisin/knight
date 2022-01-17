@@ -14,6 +14,7 @@ import Price from './HomeComponents/9_Price';
 import LOGO from '../../images/1_Title/logo 1.png'
 import { checkvisible, getOffset } from '../../utils';
 import { useOnWindowScroll } from "rooks";
+import { isMobile } from 'react-device-detect';
 
 interface IHomeProps {
 }
@@ -50,23 +51,24 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
     }
     );
 
+    const mobile = isMobile ? ' mobile' : ''
 
     return <>
-        {loading && <div className='loading'>
-            <div className='loading-inner'>
-                <span className='image-outer loading-logo'>
+        {!loading && <div className={'loading' + mobile}>
+            <div className={'loading-inner' + mobile}>
+                <span className={'image-outer loading-logo' + mobile}>
                     <img src={LOGO}></img>
                 </span>
-                <div className='loader-animation'>
+                <div className={'loader-animation' + mobile}>
                     <div className="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
                 </div>
-                <h1 className='loading-header'>Закрытый клуб богатых таргетологов</h1>
+                <h1 className={'loading-header' + mobile}>Закрытый клуб богатых таргетологов</h1>
             </div>
 
 
 
         </div>}
-        <span id='main-for-par'>
+        <span id={'main-for-par' + mobile}>
             <span ref={scrollRef1}></span>
             <Title />
             <Chest />

@@ -597,3 +597,10 @@
   .chest-triangle-bottom-2.mobile {
     z-index: 18;
   }
+  
+.loading-header.mobile {
+  line-height: 36px;
+  margin-top: 25px;
+  font-size: 25px;
+  text-align: center;
+}
