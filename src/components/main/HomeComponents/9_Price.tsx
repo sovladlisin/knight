@@ -12,11 +12,11 @@ const Price: React.FunctionComponent<IPriceProps> = (props) => {
     return <>
         <div className={'price-container' + mobile}>
             <div className={'price-number-container' + mobile}>
-                <h1 className={'price-title' + mobile}>УЧАСТИЕ В КЛУБЕ<br></br>
+                <h1 className={'price-title' + mobile}>УЧАСТИЕ В КЛУБЕ {!isMobile && <br></br>}
                     СТОИТ:</h1>
                 <h1 className={'price-price' + mobile}>2 000 Р. / МЕСЯЦ</h1>
-                <p className={'price-desc' + mobile}>Или 66 р. в день. Это как батончик шоколадки каждый день, только<br></br>
-                    вместо постоянного притока углеводов в твой животик, спустя месяц,<br></br>
+                <p className={'price-desc' + mobile}>Или 66 р. в день. Это как батончик шоколадки каждый день, только{!isMobile && <br></br>}
+                    вместо постоянного притока углеводов в твой животик, спустя месяц,{!isMobile && <br></br>}
                     к тебе придут деньги на карту.</p>
 
                 <h2 className={'price-title-2' + mobile}>И ЗА ЭТУ СУММУ ТЫ ПОЛУЧИШЬ:</h2>

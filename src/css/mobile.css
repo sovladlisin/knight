@@ -1,606 +1,610 @@
 
 .title-bar.mobile {
-    width: 100%;
-    margin: 0 auto;
-    border-radius: 0 0 32px 32px;
-  }
-  .logo.mobile img {
-    width: 100px;
-    height: auto;
-  }
-  .logo.mobile h1 {
-  }
-  .title-bar-inner.mobile h1 {
-    width: 290px;
-    font-size: 28px;
-    line-height: 36px;
-    height: auto;
-    font-weight: 400;
-    margin: 0;
-  }
-  .title-h2.mobile {
-    font-size: 16px;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: #223042;
-    font-weight: 400;
-    margin: 10px 0 0 0;
-  }
-  .title-list.mobile {
-    width: 280px;
-    margin: 10px 0 0 0;
-  }
-  .title-list-item-text.mobile {
-    font-size: 10px;
-    line-height: 14px;
-    color: #2A3548;
-    width: 240px;
-  }
-  .image-outer.title-list-item-icon.mobile {
-    height: 50px;
-    margin: 10px 0 0 0;
-  }
-  .title-list-item.mobile {
-    grid-template-columns: 50px auto;
-    margin-left: -10px;
-    height: 50px;
-  }
-  .title-bar-inner.mobile {
-    width: 320px;
-    padding-bottom: 420px;
-  }
-  .image-outer.title-flag.mobile {
-    height: 205px;
-    top: -75px;
-    right: -15px;
-  }
-  .image-outer.title-knight.mobile {
-    position: absolute;
-    height: 555px;
-    margin-left: -50px;
-    left: -44px;
-    bottom: -120px;
-  }
-  .title-button.mobile {
-    width: 150px;
-    height: 36px;
-    font-size: 16px;
-    margin: 25px auto 0 auto;
-    display: block;
-    border-width: 2px;
-  }
-  .title-bottom-bar.mobile {
-    width: 280px;
-    grid-template-columns: 1fr;
-  }
-  .title-bottom-bar-item-text-top.mobile {
-    font-size: 22px;
-    line-height: 22px;
-  }
-  .title-bottom-bar-item-text-bottom.mobile {
-    font-size: 10px;
-    line-height: 10px;
-    font-weight: 40;
-  }
-  .image-outer.title-bottom-bar-item-img.mobile {
-    width: 36px;
-  }
-  .title-bottom-bar-item.mobile {
-    grid-template-columns: 35px auto;
-    justify-items: left;
-    justify-content: left;
-    margin-left: 42px;
-  }
-  .title-bottom-bar.mobile {
-    padding: 10px 0;
-  }
-  
-.chest-container-outer.mobile {
-    width: 100%;
-    height: 1255px;
-    margin-bottom: 25px;
-  }
-  .chest-container.mobile {
-    width: 320px;
-    margin: 35px auto;
-  }
-  .chest-h1.mobile {
-    font-size: 28px;
-    line-height: 36px;
-    padding: 0;
-    margin: 0;
-    font-weight: 400;
-  }
-  .image-outer.chest-chest.mobile {
-    height: 240px;
-    width: auto;
-    top: 120px;
-  }
-  .chest-items.mobile {
-    top: 370px;
-    grid-template-columns: auto;
-    gap: 17px;
-  }
-  .chest-item-title.gold-text.mobile {
-    font-size: 16px;
-    line-height: 16px;
-  }
-  .chest-item-link.mobile {
-    font-size: 10px;
-    line-height: 16px;
-    font-weight: 40;
-    margin-top: 5px;
-  }
-  .image-outer.chest-item-icon.mobile {
-    height: 60px;
-    top: -12px;
-  }
-  .image-outer.chest-crown-4.mobile {
-    top: 143px;
-    left: -15px;
-    height: 50px;
-  }
-  .image-outer.chest-crown-3.mobile {
-    display: none;
-  }
-  .image-outer.chest-crown-2.mobile {
-    display: none;
-  }
-
-  .image-outer.chest-crown-1.mobile {
-    display: none;
-  }
-  .chest-crown-link-header.mobile {
-    width: 260px;
-    margin: 0 auto;
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 400;
-  }
-  
-.chest-triangle-top.mobile {
-    top: -310px;
-  }
-  
-.crown-link-container.mobile {
-    width: 280px;
-    margin: 25px auto;
-  }
-  .crown-link-block.mobile {
-    width: 280px;
-    margin: 0 auto;
-  }
-  .crown-link-text.mobile {
-    margin-left: 85px;
-  }
-  .crown-link-text-top.mobile {
-    font-size: 12px;
-    line-height: 16px;
-    width: 92%;
-    padding: 20px 0 60px 0;
-  }
-  .crown-link-text-bottom.mobile {
-    font-size: 10px;
-    line-height: 10px;
-    bottom: 45px;
-  }
-  .crown-link-link.gold-text.mobile p {
-    font-size: 10px;
-    line-height: 10px;
-  }
-  .crown-link-link.gold-text.mobile i {
-    font-size: 16px;
-    line-height: 11px;
-  }
-  .image-outer.crown-link-helmet.mobile {
-    height: 75px;
-    top: 9px;
-    left: 4%;
-  }
-  .crown-link-link.gold-text.mobile {
-    right: 74px;
-    bottom: 15px;
-  }
-  
-.image-outer.common-title-icon.mobile {
-    display: none;
-  }
-  .live-streams-container.mobile {
-    width: 320px;
-    border-radius: 32px;
-  }
-  .common-title.mobile {
-    font-size: 16px;
-    line-height: 22px;
-  }
-  .common-subtitle.mobile {
-    font-size: 10px;
-    line-height: 16px;
-    width: 200px;
-    margin-bottom: 15px;
-  }
-  .live-streams-item-list-item-text.mobile {
-    font-size: 10px;
-    line-height: 16px;
-  }
-  .live-streams-item-list.mobile {
-    width: 260px;
-    margin: 0px 0 0 -10px;
-  }
-  .image-outer.arrow-circle.mobile {
-    height: 12px;
-  }
-  .live-streams-item-list-item.mobile {
-    gap: 0px;
-  }
-  .live-streams-item-list-link.gold-text.mobile p {
-    font-size: 10px;
-    line-height: 10px;
-  }
-  .live-streams-item-list-link.gold-text.mobile i {
-    font-size: 12px;
-    line-height: 12px;
-  }
-  .live-streams-item-list-link.gold-text.mobile {
-    margin-top: 15px;
-    margin-left: 0;
-    gap: 5px;
-  }
-  .image-outer.live-streams-coins-1.mobile {
-    display: none;
-  }
-  .live-streams-person-icon-container.mobile {
-    height: 150px;
-  }
-  .image-outer.live-streams-person-icon.mobile {
-    height: 150px;
-    width: 150px;
-  }
-  .live-streams-person-name.mobile {
-    margin: 130px auto 0 auto;
-    font-size: 16px;
-    line-height: 22px;
-  }
-  .live-streams-people-icons.mobile {
-    grid-template-columns: auto auto;
-    gap: 30px 55px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-  }
-  .chat-container.mobile {
-    width: 320px;
-    border-radius: 32px;
-  }
-  .common-subtitle.mobile span {
-    font-size: 10px;
-    line-height: 16px;
-    width: 260px;
-    margin-bottom: 10px;
-  }
-  .image-outer.chat-scroll-1.mobile {
-    height: 185px;
-    top: 20%;
-  }
-  .chat-line.mobile {
-    width: 260px;
-  }
-  .key-container.mobile {
-    width: 320px;
-    border-radius: 32px;
-  }
-  .image-outer.key-coins-1.mobile {
-    width: 160px;
-    top: 21%;
-  }
-  .key-line.mobile {
-    width: 260px;
-  }
-  .money-boss-container.mobile {
-    width: 320px;
-    border-radius: 32px;
-  }
-  
-.common-title-container.mobile {
-    padding: 30px 0 0 30px;
-  }
-  .image-outer.live-streams-play-1.mobile {
-    width: 110px;
-    right: 0;
-    top: 0;
-  }
-  
-.get-container-outer.mobile {
-    margin-top: -210px;
-    height: 1800px;
-  }
-  .image-outer.money-boss-helmet-1.mobile {
-    height: 200px;
-    right: 0;
-    top: 160px;
-  }
-  .image-outer.get-wings-1.mobile {
-    top: 200px;
-    width: 90px;
-    left: 20px;
-  }
-  .get-container.mobile {
-    top: 16%;
-    width: 280px;
-  }
-  .get-header.mobile {
-    font-size: 28px;
-    line-height: 36px;
-  }
-  .get-items.mobile {
-    grid-template-columns: auto;
-    gap: 12px;
-  }
-  .get-item.mobile {
-    width: 256px;
-    padding: 12px;
-    height: auto;
-  }
-  .get-item-title.mobile {
-    font-size: 16px;
-    line-height: 22px;
-  }
-  .get-item-text.mobile {
-    font-size: 10px;
-    line-height: 16px;
-    font-weight: 40;
-  }
-  .image-outer.get-cup-1.mobile {
-    height: 260px;
-    right: -50px;
-    top: 700px;
-  }
-  .get-quote-container.mobile {
-    width: 220px;
-    margin: 20px auto;
-  }
-  .get-quote-text.mobile {
-    font-size: 16px;
-    line-height: 22px;
-  }
-  .get-quote-button.mobile {
-    width: 150px;
-    height: 36px;
-    font-size: 16px;
-    line-height: 16px;
-    border-width: 1px;
-    margin: 20px auto;
-  }
-  .image-outer.get-knight-1.mobile {
-    height: 440px;
-    right: -65px;
-    bottom: -380px;
-  }
-  .image-outer.get-coin-1.mobile {
-    bottom: -92px;
-    left: -20px;
-    height: 115px;
-  }
-  
-.price-title.mobile {
-    font-size: 16px;
-    line-height: 22px;
-  }
-  .price-price.mobile {
-    font-size: 32px;
-    line-height: 32px;
-  }
-  .price-container.mobile {
-    width: 280px;
-  }
-  .price-desc.mobile {
-    font-size: 10px;
-    line-height: 16px;
-    margin-bottom: 240px;
-  }
-  .price-title-2.mobile {
-    margin-top: 69px;
-    font-size: 16px;
-    line-height: 22px;
-    margin-bottom: 15px;
-  }
-  .price-item-text.mobile {
-    font-size: 10px;
-    line-height: 16px;
-    width: 210px;
-  }
-  .price-item.mobile {
-    gap: 0;
-  }
-  .price-items.mobile {
-    margin: 0 0 0 -10px;
-  }
-  .image-outer.price-number-coinbag-1.mobile {
-    position: absolute;
-    top: 215px;
-    height: 234px;
-    right: -70px;
-  }
-  .image-outer.price-number-bars-1.mobile {
-    position: absolute;
-    top: 265px;
-    height: 145px;
-    right: 86px;
-  }
-  
-.founder-container.mobile {
-    width: 320px;
-    border-radius: 32px;
-    margin: 60px auto 30px auto;
-  }
-  .founder-left.mobile {
-    padding: 45px 20px 340px 20px;
-    margin: 0;
-  }
-  .founder-title.mobile {
-    font-size: 28px;
-    line-height: 30px;
-    width: 150px;
-  }
-  .founder-text-item.mobile {
-    font-size: 10px;
-    line-height: 16px;
-    margin-bottom: 10px;
-  }
-  .founder-text.mobile {
-    margin-top: 10px;
-  }
-  .founder-about-absolute-text.mobile {
-    font-size: 14px;
-    line-height: 16px;
-    width: 91px;
-    left: 112px;
-    top: -17px;
-  }
-  .image-outer.founder-scroll-1.mobile {
-    position: absolute;
-    top: -50px;
-    left: 81px;
-    width: 155px;
-    z-index: 1;
-  }
-  .image-outer.founder-knight-1.mobile {
-    height: 366px;
-    right: -87px;
-  }
-  
-.faq-main-title-top.mobile {
-    font-size: 16px;
-    line-height: 22px;
-  }
-  .faq-main-title-bottom.mobile {
-    font-size: 32px;
-    line-height: 32px;
-  }
-  .faq-container.mobile {
-    width: 304px;
-    gap: 12px;
-  }
-  .faq-item-line-title.mobile {
-    font-size: 10px;
-    line-height: 16px;
-    width: 90%;
-  }
-  .faq-item-line.mobile {
-    height: max-content;
-    padding: 20px 0;
-    grid-template-columns: auto 24px;
-  }
-  .faq-item-icon.mobile {
-    height: 24px;
-  }
-  .faq-item-container.mobile {
-    padding: 0 20px;
-  }
-  p {
-  }
-  .faq-item-text.mobile p {
-    font-size: 10px;
-    line-height: 16px;
-  }
-  .faq-item-text.mobile {
-    gap: 10px;
-    padding: 20px 0;
-  }
-  
-.last-knight-join.mobile {
-    margin: 10px auto;
-  }
-  .last-knight-content.mobile {
-    width: 280px;
-    padding-bottom: 315px;
-    margin: 30px auto 0 auto;
-  }
-  .last-knight-content-main-title.mobile {
-    font-size: 28px;
-    line-height: 36px;
-  }
-  .last-knight-content-second-title.mobile {
-    font-size: 16px;
-    line-height: 16px;
-    margin-top: 12px;
-  }
-  .image-outer.last-knight-item-icon.mobile {
-    height: 50px;
-    margin: 10px 0 0 0;
-  }
-  .last-knight-item-text.mobile {
-    font-size: 10px;
-    line-height: 14px;
-    color: #2A3548;
-    width: 240px;
-  }
-  .last-knight-item.mobile {
-    grid-template-columns: 50px auto;
-    margin-left: -10px;
-    height: 50px;
-  }
-  .last-knight-item-list.mobile {
-    margin-top: 0px;
-    margin-left: -5px;
-  }
-  
-.image-outer.last-knight-image-knight.mobile {
-    height: 330px;
-    left: 43%;
-    transform: translate(-50%);
-    right: 0;
-  }
-  .image-outer.last-knight-image-coin.mobile {
-    height: 330px;
-    left: 33%;
-    transform: translate(-50%);
-    right: 0;
-    bottom: -5px;
-  }
-  .footer-container.mobile {
-    grid-template-columns: auto;
-    width: 280px;
-    padding: 20px 0;
-    gap: 10px;
-  }
-  .footer.mobile {
-    height: max-content;
-  }
-  .image-outer.footer-logo.mobile {
-    width: 130px;
-  }
-  .footer-contact-text.mobile {
-    font-size: 12px;
-    line-height: 14px;
-  }
-  .footer-address.mobile {
-    font-size: 12px;
-    line-height: 14px;
-  }
-  .footer-legal.mobile {
-    font-size: 12px;
-  }
-  .footer-return.mobile p {
-    font-size: 12px !important;
-  }
-  .footer-return.mobile {
-    font-size: 12px;
-    gap: 5px;
-  }
-  .image-outer.footer-arrow.mobile {
-    width: 12px;
-  }
-  
-.chest-triangle-bottom-1.mobile {
-    z-index: 18;
-  }
-  .chest-triangle-bottom-2.mobile {
-    z-index: 18;
-  }
-  
-.loading-header.mobile {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 0 0 32px 32px;
+}
+.logo.mobile img {
+  width: 100px;
+  height: auto;
+}
+.logo.mobile h1 {
+}
+.title-bar-inner.mobile h1 {
+  width: 290px;
+  font-size: 28px;
   line-height: 36px;
-  margin-top: 25px;
-  font-size: 25px;
-  text-align: center;
+  height: auto;
+  font-weight: 400;
+  margin: 0;
+}
+.title-h2.mobile {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #223042;
+  font-weight: 400;
+  margin: 10px 0 0 0;
+}
+.title-list.mobile {
+  width: 280px;
+  margin: 10px 0 0 0;
+}
+.title-list-item-text.mobile {
+  font-size: 10px;
+  line-height: 14px;
+  color: #2A3548;
+  width: 240px;
+}
+.image-outer.title-list-item-icon.mobile {
+  height: 50px;
+  margin: 10px 0 0 0;
+}
+.title-list-item.mobile {
+  grid-template-columns: 50px auto;
+  margin-left: -10px;
+  height: 50px;
+}
+.title-bar-inner.mobile {
+  width: 320px;
+  padding-bottom: 420px;
+}
+.image-outer.title-flag.mobile {
+  height: 205px;
+  top: -75px;
+  right: -15px;
+}
+.image-outer.title-knight.mobile {
+  position: absolute;
+  height: 555px;
+  margin-left: -50px;
+  left: -44px;
+  bottom: -120px;
+}
+.title-button.mobile {
+  width: 150px;
+  height: 36px;
+  font-size: 16px;
+  margin: 25px auto 0 auto;
+  display: block;
+  border-width: 2px;
+}
+.title-bottom-bar.mobile {
+  width: 280px;
+  grid-template-columns: 1fr;
+}
+.title-bottom-bar-item-text-top.mobile {
+  font-size: 22px;
+  line-height: 22px;
+}
+.title-bottom-bar-item-text-bottom.mobile {
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 40;
+}
+.image-outer.title-bottom-bar-item-img.mobile {
+  width: 36px;
+}
+.title-bottom-bar-item.mobile {
+  grid-template-columns: 35px auto;
+  justify-items: left;
+  justify-content: left;
+  margin-left: 42px;
+}
+.title-bottom-bar.mobile {
+  padding: 10px 0;
+}
+
+.chest-container-outer.mobile {
+  width: 100%;
+  height: 1255px;
+  margin-bottom: 25px;
+}
+.chest-container.mobile {
+  width: 320px;
+  margin: 35px auto;
+}
+.chest-h1.mobile {
+  font-size: 28px;
+  line-height: 36px;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+}
+.image-outer.chest-chest.mobile {
+  height: 240px;
+  width: auto;
+  top: 120px;
+}
+.chest-items.mobile {
+  top: 370px;
+  grid-template-columns: auto;
+  gap: 17px;
+}
+.chest-item-title.gold-text.mobile {
+  font-size: 16px;
+  line-height: 16px;
+}
+.chest-item-link.mobile {
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 40;
+  margin-top: 5px;
+}
+.image-outer.chest-item-icon.mobile {
+  height: 60px;
+  top: -12px;
+}
+.image-outer.chest-crown-4.mobile {
+  top: 143px;
+  left: -15px;
+  height: 50px;
+}
+.image-outer.chest-crown-3.mobile {
+  display: none;
+}
+.image-outer.chest-crown-2.mobile {
+  display: none;
+}
+
+.image-outer.chest-crown-1.mobile {
+  display: none;
+}
+.chest-crown-link-header.mobile {
+  width: 260px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.chest-triangle-top.mobile {
+  top: -310px;
+}
+
+.crown-link-container.mobile {
+  width: 280px;
+  margin: 25px auto;
+}
+.crown-link-block.mobile {
+  width: 280px;
+  margin: 0 auto;
+}
+.crown-link-text.mobile {
+  margin-left: 85px;
+}
+.crown-link-text-top.mobile {
+  font-size: 12px;
+  line-height: 16px;
+  width: 92%;
+  padding: 20px 0 60px 0;
+}
+.crown-link-text-bottom.mobile {
+  font-size: 10px;
+  line-height: 10px;
+  bottom: 45px;
+}
+.crown-link-link.gold-text.mobile p {
+  font-size: 10px;
+  line-height: 10px;
+}
+.crown-link-link.gold-text.mobile i {
+  font-size: 16px;
+  line-height: 11px;
+}
+.image-outer.crown-link-helmet.mobile {
+  height: 75px;
+  top: 9px;
+  left: 4%;
+}
+.crown-link-link.gold-text.mobile {
+  right: 74px;
+  bottom: 15px;
+}
+
+.image-outer.common-title-icon.mobile {
+  display: none;
+}
+.live-streams-container.mobile {
+  width: 320px;
+  border-radius: 32px;
+}
+.common-title.mobile {
+  font-size: 16px;
+  line-height: 22px;
+  width: 250px;
+}
+.common-subtitle.mobile {
+  font-size: 10px;
+  line-height: 16px;
+  width: 200px;
+  margin-bottom: 15px;
+}
+.live-streams-item-list-item-text.mobile {
+  font-size: 10px;
+  line-height: 16px;
+}
+.live-streams-item-list.mobile {
+  width: 260px;
+  margin: 0px 0 0 -10px;
+}
+.image-outer.arrow-circle.mobile {
+  height: 12px;
+}
+.live-streams-item-list-item.mobile {
+  gap: 0px;
+}
+.live-streams-item-list-link.gold-text.mobile p {
+  font-size: 10px;
+  line-height: 10px;
+}
+.live-streams-item-list-link.gold-text.mobile i {
+  font-size: 12px;
+  line-height: 12px;
+}
+.live-streams-item-list-link.gold-text.mobile {
+  margin-top: 15px;
+  margin-left: 0;
+  gap: 5px;
+}
+.image-outer.live-streams-coins-1.mobile {
+  display: none;
+}
+.live-streams-person-icon-container.mobile {
+  height: 150px;
+}
+.image-outer.live-streams-person-icon.mobile {
+  height: 150px;
+  width: 150px;
+}
+.live-streams-person-name.mobile {
+  margin: 130px auto 0 auto;
+  font-size: 16px;
+  line-height: 22px;
+}
+.live-streams-people-icons.mobile {
+  grid-template-columns: auto auto;
+  gap: 30px 55px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.chat-container.mobile {
+  width: 320px;
+  border-radius: 32px;
+}
+.common-subtitle.mobile span {
+  font-size: 10px;
+  line-height: 16px;
+  width: 260px;
+  margin-bottom: 10px;
+}
+.image-outer.chat-scroll-1.mobile {
+  height: 185px;
+  top: 20%;
+}
+.chat-line.mobile {
+  width: 260px;
+}
+.key-container.mobile {
+  width: 320px;
+  border-radius: 32px;
+  padding-bottom: 45px;
+}
+.image-outer.key-coins-1.mobile {
+  width: 160px;
+  top: 21%;
+}
+.key-line.mobile {
+  width: 260px;
+}
+.money-boss-container.mobile {
+  width: 320px;
+  border-radius: 32px;
+}
+
+.common-title-container.mobile {
+  padding: 30px 0 0 30px;
+}
+.image-outer.live-streams-play-1.mobile {
+  width: 110px;
+  right: 0;
+  top: 0;
+}
+
+.get-container-outer.mobile {
+  margin-top: -210px;
+  height: 1800px;
+  margin-bottom: 20px;
+}
+.image-outer.money-boss-helmet-1.mobile {
+  height: 200px;
+  right: 0;
+  top: 160px;
+}
+.image-outer.get-wings-1.mobile {
+  top: 200px;
+  width: 90px;
+  left: 20px;
+}
+.get-container.mobile {
+  top: 16%;
+  width: 280px;
+}
+.get-header.mobile {
+  font-size: 28px;
+  line-height: 36px;
+}
+.get-items.mobile {
+  grid-template-columns: auto;
+  gap: 12px;
+}
+.get-item.mobile {
+  width: 256px;
+  padding: 12px;
+  height: auto;
+}
+.get-item-title.mobile {
+  font-size: 16px;
+  line-height: 22px;
+}
+.get-item-text.mobile {
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 40;
+}
+.image-outer.get-cup-1.mobile {
+  height: 260px;
+  right: -50px;
+  top: 700px;
+}
+.get-quote-container.mobile {
+  width: 220px;
+  margin: 20px auto;
+}
+.get-quote-text.mobile {
+  font-size: 16px;
+  line-height: 22px;
+}
+.get-quote-button.mobile {
+  width: 150px;
+  height: 36px;
+  font-size: 16px;
+  line-height: 16px;
+  border-width: 1px;
+  margin: 20px auto;
+}
+.image-outer.get-knight-1.mobile {
+  height: 440px;
+  right: -65px;
+  bottom: -380px;
+}
+.image-outer.get-coin-1.mobile {
+  bottom: -92px;
+  left: -20px;
+  height: 115px;
+}
+
+.price-title.mobile {
+  font-size: 16px;
+  line-height: 22px;
+}
+.price-price.mobile {
+  font-size: 32px;
+  line-height: 32px;
+}
+.price-container.mobile {
+  width: 280px;
+  margin: 10px auto 40px auto;
+}
+.price-desc.mobile {
+  font-size: 10px;
+  line-height: 16px;
+  margin-bottom: 240px;
+}
+.price-title-2.mobile {
+  margin-top: 69px;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+.price-item-text.mobile {
+  font-size: 10px;
+  line-height: 16px;
+  width: 210px;
+}
+.price-item.mobile {
+  gap: 0;
+}
+.price-items.mobile {
+  margin: 0 0 0 -10px;
+}
+.image-outer.price-number-coinbag-1.mobile {
+  position: absolute;
+  top: 167px;
+  height: 234px;
+  right: -70px;
+}
+.image-outer.price-number-bars-1.mobile {
+  position: absolute;
+  top: 222px;
+  height: 145px;
+  right: 86px;
+}
+
+.founder-container.mobile {
+  width: 320px;
+  border-radius: 32px;
+  margin: 60px auto 30px auto;
+}
+.founder-left.mobile {
+  padding: 45px 20px 340px 20px;
+  margin: 0;
+}
+.founder-title.mobile {
+  font-size: 28px;
+  line-height: 30px;
+  width: 150px;
+}
+.founder-text-item.mobile {
+  font-size: 10px;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+.founder-text.mobile {
+  margin-top: 10px;
+}
+.founder-about-absolute-text.mobile {
+  font-size: 14px;
+  line-height: 16px;
+  width: 91px;
+  left: 112px;
+  top: -17px;
+}
+.image-outer.founder-scroll-1.mobile {
+  position: absolute;
+  top: -50px;
+  left: 81px;
+  width: 155px;
+  z-index: 1;
+}
+.image-outer.founder-knight-1.mobile {
+  height: 366px;
+  right: -87px;
+}
+
+.faq-main-title-top.mobile {
+  font-size: 16px;
+  line-height: 22px;
+}
+.faq-main-title-bottom.mobile {
+  font-size: 32px;
+  line-height: 32px;
+}
+.faq-container.mobile {
+  width: 304px;
+  gap: 12px;
+}
+.faq-item-line-title.mobile {
+  font-size: 10px;
+  line-height: 16px;
+  width: 90%;
+}
+.faq-item-line.mobile {
+  height: max-content;
+  padding: 20px 0;
+  grid-template-columns: auto 24px;
+}
+.faq-item-icon.mobile {
+  height: 24px;
+}
+.faq-item-container.mobile {
+  padding: 0 20px;
+}
+p {
+}
+.faq-item-text.mobile p {
+  font-size: 10px;
+  line-height: 16px;
+}
+.faq-item-text.mobile {
+  gap: 10px;
+  padding: 20px 0;
+}
+
+.last-knight-join.mobile {
+  margin: 10px auto;
+}
+.last-knight-content.mobile {
+  width: 280px;
+  padding-bottom: 315px;
+  margin: 30px auto 0 auto;
+}
+.last-knight-content-main-title.mobile {
+  font-size: 28px;
+  line-height: 36px;
+}
+.last-knight-content-second-title.mobile {
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: 12px;
+}
+.image-outer.last-knight-item-icon.mobile {
+  height: 50px;
+  margin: 10px 0 0 0;
+}
+.last-knight-item-text.mobile {
+  font-size: 10px;
+  line-height: 14px;
+  color: #2A3548;
+  width: 240px;
+}
+.last-knight-item.mobile {
+  grid-template-columns: 50px auto;
+  margin-left: -10px;
+  height: 50px;
+}
+.last-knight-item-list.mobile {
+  margin-top: 0px;
+  margin-left: -5px;
+}
+
+.image-outer.last-knight-image-knight.mobile {
+  height: 330px;
+  left: 43%;
+  transform: translate(-50%);
+  right: 0;
+}
+.image-outer.last-knight-image-coin.mobile {
+  height: 330px;
+  left: 33%;
+  transform: translate(-50%);
+  right: 0;
+  bottom: -5px;
+}
+.footer-container.mobile {
+  grid-template-columns: auto;
+  width: 280px;
+  padding: 20px 0;
+  gap: 10px;
+}
+.footer.mobile {
+  height: max-content;
+}
+.image-outer.footer-logo.mobile {
+  width: 130px;
+}
+.footer-contact-text.mobile {
+  font-size: 12px;
+  line-height: 14px;
+}
+.footer-address.mobile {
+  font-size: 12px;
+  line-height: 14px;
+}
+.footer-legal.mobile {
+  font-size: 12px;
+}
+.footer-return.mobile p {
+  font-size: 12px !important;
+}
+.footer-return.mobile {
+  font-size: 12px;
+  gap: 5px;
+}
+.image-outer.footer-arrow.mobile {
+  width: 12px;
+}
+
+.chest-triangle-bottom-1.mobile {
+  z-index: 18;
+}
+.chest-triangle-bottom-2.mobile {
+  z-index: 18;
+}
+
+.loading-header.mobile {
+line-height: 36px;
+margin-top: 25px;
+font-size: 25px;
+text-align: center;
 }

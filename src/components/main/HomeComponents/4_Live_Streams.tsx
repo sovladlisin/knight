@@ -47,7 +47,7 @@ const Live_Streams: React.FunctionComponent<ILive_StreamsProps> = (props) => {
                     <span className={'image-outer common-title-icon' + mobile}><img src={cl1}></img></span>
 
                     <div className={'common-title-text' + mobile}>
-                        <h1 className={'common-title' + mobile}>1. Прямые эфиры <br></br>
+                        <h1 className={'common-title' + mobile}>1. Прямые эфиры {!isMobile && <br></br>}
                             от топ-экспертов </h1>
                         <p className={'common-subtitle' + mobile}>Мы приглашаем медийных и крепких таргетологов
                             с доходом 100 тыс. р. - 500 тыс. р. в месяц:</p>
@@ -157,7 +157,7 @@ const Live_Streams: React.FunctionComponent<ILive_StreamsProps> = (props) => {
                     <div className={'common-title-text' + mobile}>
                         <h1 className={'common-title' + mobile}>2. Видеоуроки до 60 минут
                             с краткими pdf-конспектами</h1>
-                        <p className={'common-subtitle' + mobile}>Каждый месяц вы получаете 4 новых видео урока длительностью до 60 минут, <br></br>
+                        <p className={'common-subtitle' + mobile}>Каждый месяц вы получаете 4 новых видео урока длительностью до 60 минут, {!isMobile && <br></br>}
                             а так же краткие PDF-конспекты к этим уроком, если нет времени смотреть весь эфир. </p>
                     </div>
                 </div>

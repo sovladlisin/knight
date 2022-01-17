@@ -54,7 +54,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
     const mobile = isMobile ? ' mobile' : ''
 
     return <>
-        {!loading && <div className={'loading' + mobile}>
+        {loading && <div className={'loading' + mobile}>
             <div className={'loading-inner' + mobile}>
                 <span className={'image-outer loading-logo' + mobile}>
                     <img src={LOGO}></img>

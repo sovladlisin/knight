@@ -24,7 +24,7 @@ const Key: React.FunctionComponent<IKeyProps> = (props) => {
                 <div className={'common-title-container' + mobile}>
                     <span className={'image-outer common-title-icon' + mobile}><img src={cl5}></img></span>
                     <div className={'common-title-text' + mobile}>
-                        <h1 className={'common-title' + mobile}>5. Выжимка самого полезного <br></br>
+                        <h1 className={'common-title' + mobile}>5. Выжимка самого полезного {!isMobile && <br></br>}
                             из чата каждую неделю</h1>
                         <p className={'common-subtitle' + mobile}><span>Вместо “тысячи сообщений за день” ты получишь раз в неделю
                             выжимку самого полезного, что было за неделю.</span>
@@ -41,9 +41,9 @@ const Key: React.FunctionComponent<IKeyProps> = (props) => {
                 <div className={'common-title-container' + mobile}>
                     <span className={'image-outer common-title-icon' + mobile}><img src={cl6}></img></span>
                     <div className={'common-title-text' + mobile}>
-                        <h1 className={'common-title' + mobile}>6. Ответы на вопросы <br></br>
+                        <h1 className={'common-title' + mobile}>6. Ответы на вопросы {!isMobile && <br></br>}
                             от основателя клуба</h1>
-                        <p className={'common-subtitle' + mobile}>Можно получить развернутый ответ на свой вопрос от основателя клуба. <br></br>
+                        <p className={'common-subtitle' + mobile}>Можно получить развернутый ответ на свой вопрос от основателя клуба. {!isMobile && <br></br>}
                             Несмотря на то, что его доход более 1 млн. р. в месяц. </p>
                     </div>
                 </div>
