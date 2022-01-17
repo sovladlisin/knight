@@ -11,64 +11,68 @@ import L_CALENDAR from '../../../images/1_Title/list-calendar.png'
 import L_COIN from '../../../images/1_Title/list-coin.png'
 import L_PEOPLE from '../../../images/1_Title/list-people.png'
 import LOGO from '../../../images/1_Title/logo 1.png'
+import { isMobile } from 'react-device-detect';
 interface ITitleProps {
 }
 
 const Title: React.FunctionComponent<ITitleProps> = (props) => {
+
+    const mobile = isMobile ? ' mobile' : ''
+
     return <>
-        <div className='title-bar'>
-            <div className='title-bar-inner'>
-                <div className='logo'>
-                    <span className='image-outer'><img src={LOGO}></img></span>
+        <div className={'title-bar' + mobile}>
+            <div className={'title-bar-inner' + mobile}>
+                <div className={'logo' + mobile}>
+                    <span className={'image-outer' + mobile}><img src={LOGO}></img></span>
 
                 </div>
                 <h1>
                     Закрытый клуб богатых таргетологов “Таргетрон”
                 </h1>
-                <h2 className='title-h2'>Здесь ты получишь все, чтобы:</h2>
-                <div className='title-list'>
-                    <div className='title-list-item'>
-                        <span className='image-outer title-list-item-icon'><img src={L_COIN}></img></span>
-                        <p className='title-list-item-text'>Выйти на стабильные 100 тыс. р. в месяц</p>
+                <h2 className={'title-h2' + mobile}>Здесь ты получишь все, чтобы:</h2>
+                <div className={'title-list' + mobile}>
+                    <div className={'title-list-item' + mobile}>
+                        <span className={'image-outer title-list-item-icon' + mobile}><img src={L_COIN}></img></span>
+                        <p className={'title-list-item-text' + mobile}>Выйти на стабильные 100 тыс. р. в месяц</p>
                     </div>
-                    <div className='title-list-item'>
-                        <span className='image-outer title-list-item-icon'><img src={L_CALENDAR}></img></span>
-                        <p className='title-list-item-text'>Начать работать до 6 часов в день и все успевать</p>
+                    <div className={'title-list-item' + mobile}>
+                        <span className={'image-outer title-list-item-icon' + mobile}><img src={L_CALENDAR}></img></span>
+                        <p className={'title-list-item-text' + mobile}>Начать работать до 6 часов в день и все успевать</p>
                     </div>
-                    <div className='title-list-item'>
-                        <span className='image-outer title-list-item-icon'><img src={L_PEOPLE}></img></span>
-                        <p className='title-list-item-text'>Найти клиентов, которые готовы стабильно платить по 20-35 тысяч за проект</p>
+                    <div className={'title-list-item' + mobile}>
+                        <span className={'image-outer title-list-item-icon' + mobile}><img src={L_PEOPLE}></img></span>
+                        <p className={'title-list-item-text' + mobile}>Найти клиентов, которые готовы стабильно платить по 20-35 тысяч за проект</p>
                     </div>
                 </div>
 
-                <button className='title-button'>ВСТУПИТЬ В КЛУБ</button>
-                <span className='image-outer title-flag'><img src={FLAG}></img></span>
-                <div className='image-outer title-knight'><img src={KNIGHT}></img></div>
+                <button className={'title-button' + mobile}>ВСТУПИТЬ В КЛУБ</button>
+                <span className={'image-outer title-flag' + mobile}><img src={FLAG}></img></span>
+                {!isMobile && <div className={'image-outer title-knight' + mobile}><img src={KNIGHT}></img></div>}
+                {isMobile && <div className={'image-outer title-knight' + mobile}><img src={KNIGHT}></img></div>}
 
 
             </div>
-
         </div>
-        <div className='title-bottom-bar'>
-            <div className='title-bottom-bar-item'>
-                <span className='image-outer title-bottom-bar-item-img'><img src={B_CALENDAR}></img></span>
-                <div className='title-bottom-bar-item-text'>
-                    <p className='title-bottom-bar-item-text-top'>4.5 месяца</p>
-                    <p className='title-bottom-bar-item-text-bottom'>Существует клуб</p>
+        <div className={'title-bottom-bar' + mobile}>
+            <div className={'title-bottom-bar-item' + mobile}>
+                <span className={'image-outer title-bottom-bar-item-img' + mobile}><img src={B_CALENDAR}></img></span>
+                <div className={'title-bottom-bar-item-text' + mobile}>
+                    <p className={'title-bottom-bar-item-text-top' + mobile}>4.5 месяца</p>
+                    <p className={'title-bottom-bar-item-text-bottom' + mobile}>Существует клуб</p>
                 </div>
             </div>
-            <div className='title-bottom-bar-item'>
-                <span className='image-outer title-bottom-bar-item-img'><img src={B_PEOPLE}></img></span>
-                <div className='title-bottom-bar-item-text'>
-                    <p className='title-bottom-bar-item-text-top'>113 участников</p>
-                    <p className='title-bottom-bar-item-text-bottom'>На данный момент</p>
+            <div className={'title-bottom-bar-item' + mobile}>
+                <span className={'image-outer title-bottom-bar-item-img' + mobile}><img src={B_PEOPLE}></img></span>
+                <div className={'title-bottom-bar-item-text' + mobile}>
+                    <p className={'title-bottom-bar-item-text-top' + mobile}>113 участников</p>
+                    <p className={'title-bottom-bar-item-text-bottom' + mobile}>На данный момент</p>
                 </div>
             </div>
-            <div className='title-bottom-bar-item'>
-                <span className='image-outer title-bottom-bar-item-img'><img src={B_MONEY}></img></span>
-                <div className='title-bottom-bar-item-text'>
-                    <p className='title-bottom-bar-item-text-top'>1 500 000 р.</p>
-                    <p className='title-bottom-bar-item-text-bottom'>Заработано участниками</p>
+            <div className={'title-bottom-bar-item' + mobile}>
+                <span className={'image-outer title-bottom-bar-item-img' + mobile}><img src={B_MONEY}></img></span>
+                <div className={'title-bottom-bar-item-text' + mobile}>
+                    <p className={'title-bottom-bar-item-text-top' + mobile}>1 500 000 р.</p>
+                    <p className={'title-bottom-bar-item-text-bottom' + mobile}>Заработано участниками</p>
                 </div>
             </div>
 

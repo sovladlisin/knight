@@ -1,7 +1,9 @@
 body{
     background: white;
 }
-
+#root {
+    overflow-x: hidden;
+}
 ::-webkit-scrollbar {
     width: 0px;
 }

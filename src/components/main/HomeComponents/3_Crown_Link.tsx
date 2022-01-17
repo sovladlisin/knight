@@ -4,20 +4,24 @@ interface ICrown_LinkProps {
     text: string,
     image?: any
 }
+import { isMobile } from 'react-device-detect';
 
 const Crown_Link: React.FunctionComponent<ICrown_LinkProps> = (props) => {
+    const mobile = isMobile ? ' mobile' : ''
+
+
     return <>
 
-        <div className='crown-link-container'>
+        <div className={'crown-link-container' + mobile}>
 
-            <div className='crown-link-block'>
-                <span className='image-outer crown-link-helmet'><img src={props.image}></img></span>
+            <div className={'crown-link-block' + mobile}>
+                <span className={'image-outer crown-link-helmet' + mobile}><img src={props.image}></img></span>
 
-                <div className='crown-link-text'>
-                    <p className='crown-link-text-top'>{props.text}</p>
-                    <p className='crown-link-text-bottom'>Отзыв нашего участника</p>
+                <div className={'crown-link-text' + mobile}>
+                    <p className={'crown-link-text-top' + mobile}>{props.text}</p>
+                    <p className={'crown-link-text-bottom' + mobile}>Отзыв нашего участника</p>
                 </div>
-                <a className='crown-link-link gold-text'><p>Смотреть пруф</p> <i className="fas fa-long-arrow-alt-right"></i></a>
+                <a className={'crown-link-link gold-text' + mobile}><p>Смотреть пруф</p> <i className="fas fa-long-arrow-alt-right"></i></a>
             </div>
 
         </div>

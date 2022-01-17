@@ -1,10 +1,8 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
 
 export const URL = window.location.host.includes('localhost') ? "http://" + window.location.host + '/' : "https://" + window.location.host + '/'
 export const DEBUG = true
 
-export const SERVER_URL = 'https://vtarget-payment-server.herokuapp.com/'
 
 
 export const range = (n): number[] => {
@@ -12,6 +10,50 @@ export const range = (n): number[] => {
     // Array.range(5) --> [0,1,2,3,4]
     return Array.apply(null, Array(n)).map((x, i) => i)
 };
+
+export function getOffset(el) {
+    var _x = 0;
+    var _y = 0;
+    while (el && !isNaN(el.offsetLeft) && !isNaN(el.offsetTop)) {
+        _x += el.offsetLeft - el.scrollLeft;
+        _y += el.offsetTop - el.scrollTop;
+        el = el.offsetParent;
+    }
+    return { top: _y, left: _x };
+}
+
+function posY(elm) {
+    var test = elm, top = 0;
+
+    while (!!test && test.tagName.toLowerCase() !== "body") {
+        top += test.offsetTop;
+        test = test.offsetParent;
+    }
+
+    return top;
+}
+
+function viewPortHeight() {
+    var de = document.documentElement;
+
+    if (!!window.innerWidth) { return window.innerHeight; }
+    else if (de && !isNaN(de.clientHeight)) { return de.clientHeight; }
+
+    return 0;
+}
+
+function scrollY() {
+    if (window.pageYOffset) { return window.pageYOffset; }
+    return Math.max(document.documentElement.scrollTop, document.body.scrollTop);
+}
+
+export function checkvisible(elm) {
+    var vpH = viewPortHeight(), // Viewport Height
+        st = scrollY(), // Scroll Top
+        y = posY(elm);
+
+    return (y > (vpH + st));
+}
 
 export const useKeyPress = (targetKey) => {
 
@@ -188,29 +230,6 @@ export const mergeArrays = (...arrays): number[] => {
     return uniqueArray
 }
 
-export const convertDateToString = (date: Date, end = false) => {
-    const year = date.getFullYear() + ''
-    const month = ((date.getMonth() + 1) + '').length === 1 ? '0' + (date.getMonth() + 1) : '' + (date.getMonth() + 1)
-    const day = (date.getDate() + '').length === 1 ? '0' + date.getDate() : '' + date.getDate()
-    var result = year + '-' + month + '-' + day
-    result = end ? result + ' 24:00' : result + ' 00:00'
-    return result
-}
-
-export const convertStringToDate = (time, end = false): Date => {
-    const t = time.split(' ')[0].split('-')
-    var result = new Date(parseInt(t[0]), parseInt(t[1]) - 1, parseInt(t[2]))
-    if (end) result.setHours(24)
-    if (end) result.setMinutes(0)
-    if (end) result.setSeconds(0)
-
-    if (!end) result.setHours(0)
-    if (!end) result.setMinutes(0)
-    if (!end) result.setSeconds(0)
-
-    else result.setHours(0)
-    return result
-}
 
 export const cloneArray = (array: any[]) => {
     return JSON.parse(JSON.stringify(array))
@@ -232,38 +251,3 @@ export const uniqueArray = (array) => {
 };
 
 
-
-export function performVkRequest(type: 'post' | 'get', method, params, token, v) {
-    params['access_token'] = token
-    params['v'] = v
-    var res = null
-    switch (type) {
-        case 'post':
-            return axios.post('https://api.vk.com/method/' + method, { params: params }).then(res => {
-                this.res = res.data
-                return res
-            })
-
-        case 'get':
-            return axios.get('https://api.vk.com/method/' + method, { params: params }).then(res => {
-                this.res = res.data
-                return res
-            })
-    }
-}
-
-export const convertMoney = (m: number) => {
-    if (!m) return '0 ₽'
-    return m.toLocaleString().replace(/,/g, " ",) + '  ₽'
-}
-export const convertNumberDot = (m: number) => {
-    if (!m) return '0 ₽'
-    return m.toLocaleString().replace(/,/g, ".",) + ''
-}
-
-export const getCabinetStatusColor = (status: number) => {
-    var status_color = 'red'
-    status_color = status === 1 ? 'green' : status_color
-    status_color = status === 2 ? 'yellow' : status_color
-    return status_color
-}

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import plus from '../../../images/Icons/plus.png'
+import { isMobile } from 'react-device-detect';
 import minus from '../../../images/Icons/minus.png'
 interface IFAQProps {
 }
@@ -71,24 +72,26 @@ const FAQ: React.FunctionComponent<IFAQProps> = (props) => {
 
     const [selectedTips, setSelectedTips] = React.useState<number[]>([])
 
+    const mobile = isMobile ? ' mobile' : ''
+
     return <>
-        <div className='faq-main-title'>
-            <p className='faq-main-title-top'>ОСТАЛИСЬ ВОПРОСЫ?</p>
-            <p className='faq-main-title-bottom'>ДАВАЙ ОТВЕТИМ!</p>
+        <div className={'faq-main-title' + mobile}>
+            <p className={'faq-main-title-top' + mobile}>ОСТАЛИСЬ ВОПРОСЫ?</p>
+            <p className={'faq-main-title-bottom' + mobile}>ДАВАЙ ОТВЕТИМ!</p>
         </div>
-        <div className='faq-container'>
+        <div className={'faq-container' + mobile}>
             {data_snippet.map(s => {
-                return <div className='faq-item-container'>
-                    <div className='faq-item-line' onClick={_ => {
+                return <div className={'faq-item-container' + mobile}>
+                    <div className={'faq-item-line' + mobile} onClick={_ => {
                         selectedTips.includes(s.id) ? setSelectedTips(selectedTips.filter(t => t != s.id)) : setSelectedTips([...selectedTips, s.id])
                     }}>
-                        <p className='faq-item-line-title'>{s.title}</p>
-                        <span className='faq-item-icon'>
+                        <p className={'faq-item-line-title' + mobile}>{s.title}</p>
+                        <span className={'faq-item-icon' + mobile}>
                             <img src={selectedTips.includes(s.id) ? minus : plus}></img>
                         </span>
 
                     </div>
-                    {selectedTips.includes(s.id) && <div className='faq-item-text'>
+                    {selectedTips.includes(s.id) && <div className={'faq-item-text' + mobile}>
                         {s.body}
                     </div>}
                 </div>

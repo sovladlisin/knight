@@ -12,6 +12,8 @@ import Money_Boss from './HomeComponents/7_Money_Boss';
 import Get from './HomeComponents/8_Get';
 import Price from './HomeComponents/9_Price';
 import LOGO from '../../images/1_Title/logo 1.png'
+import { checkvisible, getOffset } from '../../utils';
+import { useOnWindowScroll } from "rooks";
 
 interface IHomeProps {
 }
@@ -29,6 +31,26 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
         }, 1500);
 
     })
+
+
+
+
+    useOnWindowScroll(() => {
+        const els = document.getElementsByClassName('parallax')
+        Array.prototype.filter.call(els, function (el) {
+            if (!checkvisible(el)) {
+                var firstTop = getOffset(el).top
+                var winScrollTop = window.scrollY
+                console.log(winScrollTop)
+                var shiftDistance = (firstTop - winScrollTop) * 0.2;
+                el.style.transform = "translateY(" + shiftDistance + "px)"
+            }
+        });
+
+    }
+    );
+
+
     return <>
         {loading && <div className='loading'>
             <div className='loading-inner'>
@@ -44,19 +66,22 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
 
 
         </div>}
-        <span ref={scrollRef1}></span>
-        <Title />
-        <Chest />
-        <Live_Streams />
-        <Chat />
-        <Key />
-        <Money_Boss />
-        <Get />
-        <Price />
-        <Founder />
-        <FAQ />
-        <Last_Knight />
-        <Footer onReturn={scroll1} />
+        <span id='main-for-par'>
+            <span ref={scrollRef1}></span>
+            <Title />
+            <Chest />
+            <Live_Streams />
+            <Chat />
+            <Key />
+            <Money_Boss />
+            <Get />
+            <Price />
+            <Founder />
+            <FAQ />
+            <Last_Knight />
+            <Footer onReturn={scroll1} />
+        </span>
+
     </>;
 };
 
