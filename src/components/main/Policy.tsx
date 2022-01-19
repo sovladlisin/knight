@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useOnClickOutside } from '../utils/HandleClickOutside';
 import LOGO from '../../images/1_Title/logo 1.png'
+import { isMobile } from 'react-device-detect';
 
 interface IPolicyProps {
     onClose: () => void
@@ -8,15 +9,16 @@ interface IPolicyProps {
 
 const Policy: React.FunctionComponent<IPolicyProps> = (props) => {
 
+    const mobile = isMobile ? ' mobile' : ''
     return <>
-        <div className='policy-container'>
-            <div className='policy-header-container'>
+        <div className={'policy-container' + mobile}>
+            <div className={'policy-header-container' + mobile}>
                 <div className={'logo'} onClick={props.onClose}>
                     <span className={'image-outer'}><img src={LOGO}></img></span>
                 </div>
-                <h1 className='policy-header'>Политика конфиденциальности</h1>
+                <h1 className={'policy-header' + mobile}>Политика конфиденциальности</h1>
             </div>
-            <div className='policy-content'>
+            <div className={'policy-content' + mobile}>
                 <p>
 
                     1. Общие положения
