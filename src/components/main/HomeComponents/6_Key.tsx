@@ -12,6 +12,8 @@ import Side_Play from '../../../images/Sides/play.png'
 import cl5 from '../../../images/3_Common_List/list-5.png'
 import cl6 from '../../../images/3_Common_List/list-6.png'
 interface IKeyProps {
+    setProof: (k: number) => void
+
 }
 import { isMobile } from 'react-device-detect';
 
@@ -34,7 +36,7 @@ const Key: React.FunctionComponent<IKeyProps> = (props) => {
                     </div>
                 </div>
 
-                <Crown_Link text={'— «Все полезные лайфхаки собраны в одно \n место. Если я что-то не прочитал в течение месяца — \n мне это собрали в отдельный документ и самые \n выжимки могу прочитать любой момент времени...»'} image={cm_crown_5} />
+                <Crown_Link setProof={(n) => props.setProof(n)} src={5} text={'— «Все полезные лайфхаки собраны в одно \n место. Если я что-то не прочитал в течение месяца — \n мне это собрали в отдельный документ и самые \n выжимки могу прочитать любой момент времени...»'} image={cm_crown_5} />
 
                 <span className={'key-line' + mobile}></span>
 
@@ -49,7 +51,7 @@ const Key: React.FunctionComponent<IKeyProps> = (props) => {
                 </div>
 
                 <div className={'key-crown-link-container' + mobile}>
-                    <Crown_Link image={cm_crown_6} text={'— «Поздравь меня: я в клубе 500+ \n Помог твой скрипт поиска клиентов...»'} />
+                    <Crown_Link setProof={(n) => props.setProof(n)} src={6} image={cm_crown_6} text={'— «Поздравь меня: я в клубе 500+ \n Помог твой скрипт поиска клиентов...»'} />
 
                 </div>
 

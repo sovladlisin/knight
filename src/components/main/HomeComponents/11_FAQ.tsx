@@ -11,61 +11,28 @@ const FAQ: React.FunctionComponent<IFAQProps> = (props) => {
 
         {
             id: 1,
-            title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis finibus sapien in porttitor. Morbi lobortis enim eu auctor feugiat?',
+            title: 'Если я оплачиваю участие в клубе на месяц и по каким-то причинам мне это уже неактуально, как я смогу отменить участие?',
             body: <>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis finibus sapien in porttitor. Morbi lobortis enim eu auctor feugiat. Quisque elit ex, pharetra congue sapien at, maximus lobortis augue. Nunc consectetur egestas dolor a fermentum. Donec placerat porttitor velit sagittis tincidunt. Sed nisi quam, interdum nec massa et, pharetra ullamcorper arcu. Mauris laoreet tellus at nisl pretium, sed imperdiet magna dictum. Fusce ac pulvinar urna.</p>
-                <p>Sed et sagittis nulla, quis venenatis sem. Aliquam vel arcu volutpat, lobortis leo sed, tincidunt dolor. Sed in risus libero. Nulla lectus ipsum, ultrices aliquam gravida ac, sollicitudin id nisl. Nunc pellentesque, enim non bibendum pulvinar, ligula eros molestie sem, eget accumsan arcu magna sit amet erat. Duis porttitor, sapien id sodales efficitur, ex erat facilisis ipsum, id eleifend velit turpis sed est. Aliquam non erat arcu. Aliquam est erat, aliquam non suscipit quis, maximus eu lectus. Vestibulum porta felis arcu. Vestibulum dictum nulla turpis, sed pretium ex convallis et. Donec eu urna ipsum.</p>
+                <p>За 3 и за 1 день до следующего списания оплаты тебе в личку в Вк и на email придет уведомление, что скоро будет продлено участие в клубе.</p>
+                <p>Внутри письма будет ссылка на отписку, которую ты можешь нажать и отменить подписку на следующий месяц.</p>
             </>
         },
 
         {
             id: 2,
-            title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis finibus sapien in porttitor. Morbi lobortis enim eu auctor feugiat?',
+            title: 'Клуб подходит для таргетологов из Вконтакте и Инстаграма?',
             body: <>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis finibus sapien in porttitor. Morbi lobortis enim eu auctor feugiat. Quisque elit ex, pharetra congue sapien at, maximus lobortis augue. Nunc consectetur egestas dolor a fermentum. Donec placerat porttitor velit sagittis tincidunt. Sed nisi quam, interdum nec massa et, pharetra ullamcorper arcu. Mauris laoreet tellus at nisl pretium, sed imperdiet magna dictum. Fusce ac pulvinar urna.</p>
-                <p>Sed et sagittis nulla, quis venenatis sem. Aliquam vel arcu volutpat, lobortis leo sed, tincidunt dolor. Sed in risus libero. Nulla lectus ipsum, ultrices aliquam gravida ac, sollicitudin id nisl. Nunc pellentesque, enim non bibendum pulvinar, ligula eros molestie sem, eget accumsan arcu magna sit amet erat. Duis porttitor, sapien id sodales efficitur, ex erat facilisis ipsum, id eleifend velit turpis sed est. Aliquam non erat arcu. Aliquam est erat, aliquam non suscipit quis, maximus eu lectus. Vestibulum porta felis arcu. Vestibulum dictum nulla turpis, sed pretium ex convallis et. Donec eu urna ipsum.</p>
+                <p>Да. Ты так же прокачаешь навыки по поиску клиентов и работе с ними, чтобы делать крутые кейсы и максимально долго сотрудничасть.</p>
             </>
         },
         {
             id: 3,
-            title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis finibus sapien in porttitor. Morbi lobortis enim eu auctor feugiat?',
+            title: 'А если я маркетолог/дизайнер/директолог/копирайтер, для меня вход открыт?',
             body: <>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis finibus sapien in porttitor. Morbi lobortis enim eu auctor feugiat. Quisque elit ex, pharetra congue sapien at, maximus lobortis augue. Nunc consectetur egestas dolor a fermentum. Donec placerat porttitor velit sagittis tincidunt. Sed nisi quam, interdum nec massa et, pharetra ullamcorper arcu. Mauris laoreet tellus at nisl pretium, sed imperdiet magna dictum. Fusce ac pulvinar urna.</p>
-                <p>Sed et sagittis nulla, quis venenatis sem. Aliquam vel arcu volutpat, lobortis leo sed, tincidunt dolor. Sed in risus libero. Nulla lectus ipsum, ultrices aliquam gravida ac, sollicitudin id nisl. Nunc pellentesque, enim non bibendum pulvinar, ligula eros molestie sem, eget accumsan arcu magna sit amet erat. Duis porttitor, sapien id sodales efficitur, ex erat facilisis ipsum, id eleifend velit turpis sed est. Aliquam non erat arcu. Aliquam est erat, aliquam non suscipit quis, maximus eu lectus. Vestibulum porta felis arcu. Vestibulum dictum nulla turpis, sed pretium ex convallis et. Donec eu urna ipsum.</p>
+                <p>Нет. У нас клуб только для таргетологов. И информация для вас будет не актуальна.</p>
             </>
         },
-        {
-            id: 4,
-            title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis finibus sapien in porttitor. Morbi lobortis enim eu auctor feugiat?',
-            body: <>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis finibus sapien in porttitor. Morbi lobortis enim eu auctor feugiat. Quisque elit ex, pharetra congue sapien at, maximus lobortis augue. Nunc consectetur egestas dolor a fermentum. Donec placerat porttitor velit sagittis tincidunt. Sed nisi quam, interdum nec massa et, pharetra ullamcorper arcu. Mauris laoreet tellus at nisl pretium, sed imperdiet magna dictum. Fusce ac pulvinar urna.</p>
-                <p>Sed et sagittis nulla, quis venenatis sem. Aliquam vel arcu volutpat, lobortis leo sed, tincidunt dolor. Sed in risus libero. Nulla lectus ipsum, ultrices aliquam gravida ac, sollicitudin id nisl. Nunc pellentesque, enim non bibendum pulvinar, ligula eros molestie sem, eget accumsan arcu magna sit amet erat. Duis porttitor, sapien id sodales efficitur, ex erat facilisis ipsum, id eleifend velit turpis sed est. Aliquam non erat arcu. Aliquam est erat, aliquam non suscipit quis, maximus eu lectus. Vestibulum porta felis arcu. Vestibulum dictum nulla turpis, sed pretium ex convallis et. Donec eu urna ipsum.</p>
-            </>
-        },
-        {
-            id: 5,
-            title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis finibus sapien in porttitor. Morbi lobortis enim eu auctor feugiat?',
-            body: <>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis finibus sapien in porttitor. Morbi lobortis enim eu auctor feugiat. Quisque elit ex, pharetra congue sapien at, maximus lobortis augue. Nunc consectetur egestas dolor a fermentum. Donec placerat porttitor velit sagittis tincidunt. Sed nisi quam, interdum nec massa et, pharetra ullamcorper arcu. Mauris laoreet tellus at nisl pretium, sed imperdiet magna dictum. Fusce ac pulvinar urna.</p>
-                <p>Sed et sagittis nulla, quis venenatis sem. Aliquam vel arcu volutpat, lobortis leo sed, tincidunt dolor. Sed in risus libero. Nulla lectus ipsum, ultrices aliquam gravida ac, sollicitudin id nisl. Nunc pellentesque, enim non bibendum pulvinar, ligula eros molestie sem, eget accumsan arcu magna sit amet erat. Duis porttitor, sapien id sodales efficitur, ex erat facilisis ipsum, id eleifend velit turpis sed est. Aliquam non erat arcu. Aliquam est erat, aliquam non suscipit quis, maximus eu lectus. Vestibulum porta felis arcu. Vestibulum dictum nulla turpis, sed pretium ex convallis et. Donec eu urna ipsum.</p>
-            </>
-        },
-        {
-            id: 6,
-            title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis finibus sapien in porttitor. Morbi lobortis enim eu auctor feugiat?',
-            body: <>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis finibus sapien in porttitor. Morbi lobortis enim eu auctor feugiat. Quisque elit ex, pharetra congue sapien at, maximus lobortis augue. Nunc consectetur egestas dolor a fermentum. Donec placerat porttitor velit sagittis tincidunt. Sed nisi quam, interdum nec massa et, pharetra ullamcorper arcu. Mauris laoreet tellus at nisl pretium, sed imperdiet magna dictum. Fusce ac pulvinar urna.</p>
-                <p>Sed et sagittis nulla, quis venenatis sem. Aliquam vel arcu volutpat, lobortis leo sed, tincidunt dolor. Sed in risus libero. Nulla lectus ipsum, ultrices aliquam gravida ac, sollicitudin id nisl. Nunc pellentesque, enim non bibendum pulvinar, ligula eros molestie sem, eget accumsan arcu magna sit amet erat. Duis porttitor, sapien id sodales efficitur, ex erat facilisis ipsum, id eleifend velit turpis sed est. Aliquam non erat arcu. Aliquam est erat, aliquam non suscipit quis, maximus eu lectus. Vestibulum porta felis arcu. Vestibulum dictum nulla turpis, sed pretium ex convallis et. Donec eu urna ipsum.</p>
-            </>
-        },
-        {
-            id: 7,
-            title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis finibus sapien in porttitor. Morbi lobortis enim eu auctor feugiat?',
-            body: <>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis finibus sapien in porttitor. Morbi lobortis enim eu auctor feugiat. Quisque elit ex, pharetra congue sapien at, maximus lobortis augue. Nunc consectetur egestas dolor a fermentum. Donec placerat porttitor velit sagittis tincidunt. Sed nisi quam, interdum nec massa et, pharetra ullamcorper arcu. Mauris laoreet tellus at nisl pretium, sed imperdiet magna dictum. Fusce ac pulvinar urna.</p>
-                <p>Sed et sagittis nulla, quis venenatis sem. Aliquam vel arcu volutpat, lobortis leo sed, tincidunt dolor. Sed in risus libero. Nulla lectus ipsum, ultrices aliquam gravida ac, sollicitudin id nisl. Nunc pellentesque, enim non bibendum pulvinar, ligula eros molestie sem, eget accumsan arcu magna sit amet erat. Duis porttitor, sapien id sodales efficitur, ex erat facilisis ipsum, id eleifend velit turpis sed est. Aliquam non erat arcu. Aliquam est erat, aliquam non suscipit quis, maximus eu lectus. Vestibulum porta felis arcu. Vestibulum dictum nulla turpis, sed pretium ex convallis et. Donec eu urna ipsum.</p>
-            </>
-        },
+
     ]
 
 

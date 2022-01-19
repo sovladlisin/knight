@@ -24,7 +24,7 @@ const Last_Knight: React.FunctionComponent<ILast_KnightProps> = (props) => {
             <div className={'last-knight-container' + mobile}>
 
 
-                <a className={'last-knight-join' + mobile}>ВСТУПИТЬ В КЛУБ</a>
+                <a className={'last-knight-join' + mobile} href={'https://vk.com/app5898182_-207041967#s=1514406'} target="_blank" rel="noopener noreferrer">ВСТУПИТЬ В КЛУБ</a>
 
                 <div className={'last-knight-content' + mobile}>
 

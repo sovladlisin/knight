@@ -15,6 +15,8 @@ import LOGO from '../../images/1_Title/logo 1.png'
 import { checkvisible, getOffset } from '../../utils';
 import { useOnWindowScroll } from "rooks";
 import { isMobile } from 'react-device-detect';
+import Policy from './Policy';
+import CrownLinkProf from './CrownLinkProof';
 
 interface IHomeProps {
 }
@@ -53,6 +55,10 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
 
     const mobile = isMobile ? ' mobile' : ''
 
+    const [policy, setPolicy] = React.useState(false)
+
+    const [currentProof, setCurrentProof] = React.useState(-1)
+
     return <>
         {loading && <div className={'loading' + mobile}>
             <div className={'loading-inner' + mobile}>
@@ -71,18 +77,22 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
         <span id={'main-for-par' + mobile}>
             <span ref={scrollRef1}></span>
             <Title />
-            <Chest />
-            <Live_Streams />
-            <Chat />
-            <Key />
+            <Chest setProof={(n) => setCurrentProof(n)} />
+            <Live_Streams setProof={(n) => setCurrentProof(n)} />
+            <Chat setProof={(n) => setCurrentProof(n)} />
+            <Key setProof={(n) => setCurrentProof(n)} />
             <Money_Boss />
             <Get />
             <Price />
             <Founder />
             <FAQ />
             <Last_Knight />
-            <Footer onReturn={scroll1} />
+            <Footer onReturn={scroll1} onPolicy={() => setPolicy(true)} />
+
+            {policy && <Policy onClose={() => setPolicy(false)} />}
         </span>
+
+        {currentProof != -1 && <CrownLinkProf src={currentProof} onClose={() => setCurrentProof(-1)} />}
 
     </>;
 };

@@ -76,7 +76,9 @@ const Get: React.FunctionComponent<IGetProps> = (props) => {
                         в руке, в сильного воина
                         в крепких доспехах
                         со светящимся мечом </p>
-                    <button className={'get-quote-button' + mobile}>ВСТУПИТЬ В КЛУБ</button>
+                    <a href={'https://vk.com/app5898182_-207041967#s=1514406'} target="_blank" rel="noopener noreferrer"><button className={'get-quote-button' + mobile}>ВСТУПИТЬ В КЛУБ</button></a>
+
+
                 </div>
 
                 {isMobile && <>

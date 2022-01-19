@@ -2,7 +2,9 @@ import * as React from 'react';
 
 interface ICrown_LinkProps {
     text: string,
-    image?: any
+    image?: any,
+    src: number,
+    setProof: (k: number) => void
 }
 import { isMobile } from 'react-device-detect';
 
@@ -21,10 +23,11 @@ const Crown_Link: React.FunctionComponent<ICrown_LinkProps> = (props) => {
                     <p className={'crown-link-text-top' + mobile}>{props.text}</p>
                     <p className={'crown-link-text-bottom' + mobile}>Отзыв нашего участника</p>
                 </div>
-                <a className={'crown-link-link gold-text' + mobile}><p>Смотреть пруф</p> <i className="fas fa-long-arrow-alt-right"></i></a>
+                <a onClick={_ => props.setProof(props.src)} className={'crown-link-link gold-text' + mobile}><p>Смотреть пруф</p> <i className="fas fa-long-arrow-alt-right"></i></a>
             </div>
 
         </div>
+
     </>;
 };
 

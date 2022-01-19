@@ -33,13 +33,15 @@ import cm_crown_2 from '../../../images/3_Common_List/helmet-2.png'
 import arrow_circle from '../../../images/Icons/arrow-circle.png'
 
 interface ILive_StreamsProps {
+    setProof: (k: number) => void
+
 }
 import { isMobile } from 'react-device-detect';
 
 const Live_Streams: React.FunctionComponent<ILive_StreamsProps> = (props) => {
     const mobile = isMobile ? ' mobile' : ''
 
-
+    const [fullList, setFullList] = React.useState(false)
     return <>
         <div className={'live-streams-container-outer' + mobile}>
             <div className={'live-streams-container' + mobile}>
@@ -74,9 +76,39 @@ const Live_Streams: React.FunctionComponent<ILive_StreamsProps> = (props) => {
                                 <p className={'live-streams-item-list-item-text' + mobile}>Как обеспечить денежный поток из разных источников и уменьшить риски
                                     остаться без денег при очередном карантине.</p>
                             </div>
+                            {fullList && <>
+                                <div className={'live-streams-item-list-item' + mobile}>
+                                    <span className={'image-outer arrow-circle' + mobile}><img src={arrow_circle}></img></span>
+                                    <p className={'live-streams-item-list-item-text' + mobile}>Мышление бл#ть на миллион в месяц.</p>
+                                </div>
+                                <div className={'live-streams-item-list-item' + mobile}>
+                                    <span className={'image-outer arrow-circle' + mobile}><img src={arrow_circle}></img></span>
+                                    <p className={'live-streams-item-list-item-text' + mobile}>Как приводить окупаемый трафик на дистанции и зарабатывать.</p>
+                                </div>
+                                <div className={'live-streams-item-list-item' + mobile}>
+                                    <span className={'image-outer arrow-circle' + mobile}><img src={arrow_circle}></img></span>
+                                    <p className={'live-streams-item-list-item-text' + mobile}>Как искать клиентов через платные и бесплатные способы в стиле «1-2-3 сделал и есть $$», которые уже обкатаны новичками и профи.</p>
+                                </div>
+                                <div className={'live-streams-item-list-item' + mobile}>
+                                    <span className={'image-outer arrow-circle' + mobile}><img src={arrow_circle}></img></span>
+                                    <p className={'live-streams-item-list-item-text' + mobile}>Как отыскать свои настоящие хотелки, которые будут зажигать похлеще напалма и, главное, достигаться.</p>
+                                </div>
+                                <div className={'live-streams-item-list-item' + mobile}>
+                                    <span className={'image-outer arrow-circle' + mobile}><img src={arrow_circle}></img></span>
+                                    <p className={'live-streams-item-list-item-text' + mobile}>Как выбрать, что делать и что не делать, чтобы таргетологу расти в деньгах без выгорания и увеличения рабочего времени?</p>
+                                </div>
+                                <div className={'live-streams-item-list-item' + mobile}>
+                                    <span className={'image-outer arrow-circle' + mobile}><img src={arrow_circle}></img></span>
+                                    <p className={'live-streams-item-list-item-text' + mobile}>Для тех кто стремиться зарабатывать 100+, но пока прокачивает профессиональные навыки.</p>
+                                </div>
+                                <div className={'live-streams-item-list-item' + mobile}>
+                                    <span className={'image-outer arrow-circle' + mobile}><img src={arrow_circle}></img></span>
+                                    <p className={'live-streams-item-list-item-text' + mobile}>Работа инфотаргетолога. С нуля до масштаба по срс.</p>
+                                </div>
+                            </>}
                         </div>
 
-                        <a className={'live-streams-item-list-link gold-text' + mobile}><p>Посмотреть все темы эфиров</p><i className="fas fa-long-arrow-alt-right"></i></a>
+                        {!fullList && <a onClick={_ => setFullList(true)} className={'live-streams-item-list-link gold-text' + mobile}><p>Посмотреть все темы эфиров</p><i className="fas fa-long-arrow-alt-right"></i></a>}
                     </div>
                 </div>
 
@@ -90,7 +122,7 @@ const Live_Streams: React.FunctionComponent<ILive_StreamsProps> = (props) => {
                 <div className={'live-streams-people-icons' + mobile}>
                     <div className={'live-streams-person-icon-container' + mobile}>
                         <span className={'image-outer live-streams-person-icon' + mobile}><img src={P1}></img></span>
-                        <p className={'live-streams-person-name' + mobile}>алексей
+                        <p className={'live-streams-person-name' + mobile}>алекс
                             волков</p>
                     </div>
                     <div className={'live-streams-person-icon-container' + mobile}>
@@ -105,7 +137,7 @@ const Live_Streams: React.FunctionComponent<ILive_StreamsProps> = (props) => {
                     </div>
                     <div className={'live-streams-person-icon-container' + mobile}>
                         <span className={'image-outer live-streams-person-icon' + mobile}><img src={P6}></img></span>
-                        <p className={'live-streams-person-name' + mobile}>Дмитрий
+                        <p className={'live-streams-person-name' + mobile}>валентин
                             гладких</p>
                     </div>
                     <div className={'live-streams-person-icon-container' + mobile}>
@@ -164,7 +196,7 @@ const Live_Streams: React.FunctionComponent<ILive_StreamsProps> = (props) => {
 
 
                 <div className={'live-streams-crown-link-container' + mobile}>
-                    <Crown_Link image={cm_crown_2} text={'— «Удалось доработать личную страницу, \n внедрить новую систему тайм-\nменеджмента, и "допилить" своё \nфрилансерское мышление...»'} />
+                    <Crown_Link setProof={(n) => props.setProof(n)} src={2} image={cm_crown_2} text={'— «Удалось доработать личную страницу, \n внедрить новую систему тайм-\nменеджмента, и "допилить" своё \nфрилансерское мышление...»'} />
                 </div>
 
 

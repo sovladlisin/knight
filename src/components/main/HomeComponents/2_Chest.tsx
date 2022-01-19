@@ -18,6 +18,7 @@ import { isMobile } from 'react-device-detect';
 import { getOffset } from '../../../utils';
 
 interface IChestProps {
+    setProof: (k: number) => void
 }
 
 const Chest: React.FunctionComponent<IChestProps> = (props) => {
@@ -110,7 +111,7 @@ const Chest: React.FunctionComponent<IChestProps> = (props) => {
             Весь контент про упаковку, привлечение клиентов, мышление <br></br>“богатого таргетолога”, чтобы ты постоянно рос в доходе и было так:
         </h2>
 
-        <Crown_Link image={cm_crown_1} text={"— «377к за сентябрь. \n И это не предел, бодаем 500...»"} />
+        <Crown_Link setProof={(n) => props.setProof(n)} src={1} image={cm_crown_1} text={"— «377к за сентябрь. \n И это не предел, бодаем 500...»"} />
 
     </>;
 };

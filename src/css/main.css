@@ -1079,19 +1079,8 @@ z-index: 1;
 }
 
 .chest-items > div:hover {
-  cursor: pointer;
-  outline: 1px solid #d9a95f;
-  outline-offset: -1px;
-  transition: 0.2s;
 }
 .chest-items > div:hover p {
-  -webkit-background-clip: text !important;
-  background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  background-image: linear-gradient(to right top, #edb968, #dbaa60, #c89b57, #b78d4f, #a57f47) !important;
-  text-decoration: underline;
-  text-decoration-color: #edb968;
-  transition: 0.2s;
 }
 
 .title-button:hover {
@@ -1201,4 +1190,75 @@ z-index: 1;
 .loader-animation {
   width: max-content;
   margin: 10px auto;
+}
+
+.crown-link-proof-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 999;
+  width: 600px;
+}
+.m-background {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000c2;
+  z-index: 99;
+}
+.image-outer.crown-link-proof-image {
+  width: inherit;
+}
+
+.policy-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 99999;
+  overflow: auto;
+}
+
+.policy-content > p {
+  /*! font-family: 'Montserrat', sans-serif; */
+  font-size: 16px;
+  color: #2A3548;
+  margin: auto 0;
+  line-height: 30px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  width: 100%;
+}
+.policy-content {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.policy-header-container {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 30px;
+}
+.policy-header {
+  padding: 30px 0 0 0;
+  height: 100px;
+  line-height: 110px;
+  font-size: 26pt;
+  text-align: right;
+  margin: 0 0 0 auto;
+  width: max-content;
+  color: #393939;
+}
+.policy-header-container > div {
+  width: max-content;
+  cursor: pointer;
+}
+.policy-content br {
+  display: block;
+  margin-bottom: 1em;
 }

@@ -10,6 +10,8 @@ import cm_crown_3 from '../../../images/3_Common_List/helmet-3.png'
 import cm_crown_4 from '../../../images/3_Common_List/helmet-4.png'
 
 interface IChatProps {
+    setProof: (k: number) => void
+
 }
 import { isMobile } from 'react-device-detect';
 
@@ -33,7 +35,7 @@ const Chat: React.FunctionComponent<IChatProps> = (props) => {
                 </div>
             </div>
 
-            <Crown_Link image={cm_crown_3} text={'— «Единственный чат, в котором я \n читаю все! Тут можно и заказики \n найти, и работодателя, сама так \n одного таргетолога привлекала \n на проект...»'} />
+            <Crown_Link setProof={(n) => props.setProof(n)} src={3} image={cm_crown_3} text={'— «Единственный чат, в котором я \n читаю все! Тут можно и заказики \n найти, и работодателя, сама так \n одного таргетолога привлекала \n на проект...»'} />
 
             <span className={'chat-line' + mobile}></span>
 
@@ -51,7 +53,7 @@ const Chat: React.FunctionComponent<IChatProps> = (props) => {
             </div>
 
             <div className={'chat-bottom-crown-container' + mobile}>
-                <Crown_Link image={cm_crown_4} text={'— «Окупил клуб x10 раз всего \n одним клиентом из чата...»'} />
+                <Crown_Link setProof={(n) => props.setProof(n)} src={4} image={cm_crown_4} text={'— «Окупил клуб x10 раз всего \n одним клиентом из чата...»'} />
             </div>
 
             <span className={'image-outer chat-scroll-1  parallax' + mobile}><img src={Side_Scroll}></img></span>

@@ -45,7 +45,9 @@ const Title: React.FunctionComponent<ITitleProps> = (props) => {
                     </div>
                 </div>
 
-                <button className={'title-button' + mobile}>ВСТУПИТЬ В КЛУБ</button>
+                <a href={'https://vk.com/app5898182_-207041967#s=1514406'} target="_blank" rel="noopener noreferrer"><button className={'title-button' + mobile}>ВСТУПИТЬ В КЛУБ</button></a>
+
+
                 <span className={'image-outer title-flag' + mobile}><img src={FLAG}></img></span>
                 {!isMobile && <div className={'image-outer title-knight' + mobile}><img src={KNIGHT}></img></div>}
                 {isMobile && <div className={'image-outer title-knight' + mobile}><img src={KNIGHT}></img></div>}
